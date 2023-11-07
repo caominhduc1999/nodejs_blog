@@ -1,1 +1,9 @@
-<h1>HOME</h1>
+{{courses}}
+<h1>home</h1>
+<div class="">
+    {{#each courses}}
+        <li>{{this.name}}</li>
+        <li>{{this.description}}</li>
+        <a href="/courses/{{this.slug}}">{{this.slug}}</a>
+    {{/each}}
+</div>

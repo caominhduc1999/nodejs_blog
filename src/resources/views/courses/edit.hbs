@@ -1,0 +1,9 @@
+<div>
+    <form method="POST" action="/courses/{{course._id}}?_method=PUT">
+        <label for="">Name</label>
+        <input type="text" name="name" value="{{course.name}}">
+        <label for="">Description</label>
+        <input type="text" name="description" value="{{course.description}}">
+        <input type="submit">
+    </form>
+</div>
